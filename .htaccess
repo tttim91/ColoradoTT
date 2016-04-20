@@ -1,0 +1,6 @@
+#Force www:
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^coloradott.com [NC]
+RewriteRule ^(.*)$ http://www.coloradott.com/$1 [L,R=301,NC]
+
+ErrorDocument 404 /404Error.html

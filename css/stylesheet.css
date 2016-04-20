@@ -1,0 +1,372 @@
+/* CSS Document */
+
+/* Reset */
+
+html, body { 
+	margin: 0; 
+	padding: 0; 
+	border: 0; 
+	background: transparent; 
+	font-size: 10px;
+}
+
+div, span, article. aside, footer, header, hgroup, nav, section, h1, h2, h3, h4, h5, h6, p, blockquote, a, ol. ul. li, table, tr, th, td, tbody, tfoot, thead {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+img {
+	margin: 0;
+	padding: 0;
+	border: 0;	
+}
+
+table, th, tr, td, thead, tfoot, tbody {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	background: transparent;	
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;	
+}
+
+input, select, textarea. form, fieldset {
+	margin: 0;
+	padding: 0;
+	border: 0;	
+}
+
+article, aside, dialog, figure, footer, header, hgroup, nav, section {
+	display: block;	
+}
+
+h1, h2, h3, h4, h5, h6, p, li, blockquote, td, th, a, caption, em, strong, strike {
+	font-family: Arial, Helvetica, sans-sefit;
+	font-size: 100%;
+	font-weight: normal;
+	font-style: normal;
+	line-height: 100%;
+	text-indent: 0;
+	text-decoration: none;
+	text-align: left;
+	color: #000;
+}
+
+ol, ul {
+
+}
+
+
+
+/* Global */
+
+html {}
+body {background-color: #001D51;}
+
+
+
+/* Headings */
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: bold;	
+}
+
+h1 {font-size: 24px; padding-bottom: 15px; border-bottom: 1px #ccc solid; margin-bottom: 15px; color: #000FB8;}
+h2 {font-size: 20px; margin-bottom: 30px;}
+h3 {font-size: 16px; margin-bottom: -10px;}
+h4 {font-size: 14px;}
+h5 {font-size: 14px;}
+h6 {font-size: 14px;}
+
+h1 img, h2 img, h3 img, h4 img, h5 img, h6 img {margin: 0; }
+
+
+
+/* Text Elements */
+
+p {
+	color: #000; 	
+	font-size: 12px;
+	line-height: 150%;
+	margin: 15px 0;
+}
+
+p .left {
+	margin: 1.5em 1.5em 1.5em 0; 
+	padding: 0;
+}
+
+p .right {
+	margin: 1.5em 0 1.5em 1.5em; 
+	padding: 0;
+}
+
+a {}
+a:link {color: #00f;}
+a:visited {color: #00f;}
+a:active {color: #000;}
+a:focus {color: #666;}
+a:hover {color: #f00;}
+
+blockquote {
+	color: #000;
+	font-size: 12px;
+}
+
+strong {font-weight: bold;}
+em {font-style: italic;}
+
+
+
+
+/* Images */
+
+.imageframe {padding: 10px; border: 1px lightgrey solid; margin: 10px;}
+
+
+
+/* Lists */
+
+ul {}
+ol {list-style-type: decimal;}
+
+ul li {color: #000; font-size: 12px;}
+ol li {color: #000; font-size: 12px;}
+ul li ul li {margin: 5px; list-style-type:square}
+
+dl {}
+dt {}
+dd {}
+
+
+
+/* Tables */
+
+table {width: 100%}
+
+tr{}
+.odd {background-color: #eee;}
+.even {background-color: #fff;}
+
+th {font-weight: bold}
+thead, th {background: #ccc;}
+
+tbody {}
+th, td, caption {}
+caption {}
+
+tfoot {}
+.tfooter {background-color: #ccc; text-align: center; font-style: italic;}
+
+caption {background: #efefef;}
+
+
+
+/* Drop-down Navigation Buttons */
+
+.dropbtn {
+    color: black;
+    padding: 0 20px;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+	background: white;
+	font-family: Arial;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 220px;
+	min-height: 25px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 0px 0px;
+    text-decoration: none;
+    display: inline-block;
+	margin: 5px 5px;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+
+
+/* Miscellaneous */
+
+.popup {padding: 0 10px; font-size: 13px;}
+
+.date {font-weight: bold; color: #242C83; margin-bottom: -10px; margin-top: 30px;}
+
+sup, sub {line-height: 0;}
+
+abbr, acronym {border-bottom: 1px dotted #666;}
+address {}
+del {background: #FFCECE; color: #f00;}
+
+#calendar {
+	frameborder: 0;
+	scrolling: no;
+	
+}
+	
+
+
+
+/* Containers */
+
+#outer {
+	width: 960px;
+	margin: auto;
+	background-color: white;
+}
+
+#wrapper {
+	width: 900px;
+	margin: auto;
+	background-color: white;
+}
+
+#logo {margin-top:10px; float: left;}
+
+#social-media-icons {float: right; }
+#social-media-icons ul li {display: inline; }
+#social-media-icons ul {margin-top: 40px;}
+
+#topnav {clear: both; }
+#topnav ul {border-top: 1px black solid; border-bottom: 1px black solid;
+			margin: 10px 0; padding: 5px 0;}
+#topnav ul li {display: inline;}
+.navitem {padding: 0 20px;}
+
+#topnav a:link {color: #000; font-weight: black;}
+#topnav a:visited {color: #000;}
+#topnav a:active {color: #000;}
+#topnav a:focus {color: #666;}
+#topnav a:hover {color: #3F4EFC;}
+
+#banner {margin-bottom: 20px;}
+#slider {margin-bottom: 20px; margin-left: -20px;}
+
+#content {width: 650px; float: left; margin-bottom: 20px;}
+#content-fullwidth {width: 100%;}
+#clubs li {font-weight: bold; font-size: 20px; font-family: serif; padding: 10px 0;}
+
+#map {width: 300px; height: 300px;}
+
+#rightside {width: 200px; float: right;}
+
+#footer {clear: both; margin: 20px 0; border-top: 1px #8C8C8C solid; padding-bottom: 20px;}
+.footertext {font-size: 100%; font-style: normal; color: #000000; text-align: center;}
+
+
+#box1 {}
+
+#box2 {}
+
+#box3 {}
+
+#box4 {}
+
+#box5 {}
+
+#box6 {}
+
+
+
+/* Layout Extra */
+
+#gif {
+	display: none;
+}
+
+#gifLink1 {
+	color: #00f;
+}
+
+
+
+/* Navigation Extra */
+
+
+
+/* Forms */
+
+form ol { list-style-type:none; }
+
+form 	{ text-align:left; margin:20px;	}
+
+label 	{ 
+		float: left; width: 150px; margin-top:5px;
+		text-align:right; display:block; background:none; font-weight:bold;
+		}
+	
+submit	{ background:none; 	}
+
+input 	{ 
+		width: 280px; margin:0 0 16px 10px;
+		border:1px #bbb solid; padding:5px; background:none; 
+		}
+		
+input:focus, textarea:focus	{ background-color:#68D1FD; }
+
+textarea {
+		width: 280px; height: 150px; margin:0 0 16px 10px;
+		border:1px #bbb solid; padding:5px; background:none; 
+		}
+
+select { margin-bottom:20px;	}
+	
+.month { margin-left:155px;	}
+
+.submit {
+		width:90px; height:25px;
+		margin-left:160px;
+		font-size:12px;
+		}
+
+br		{ clear: left; 	}
+
+.clear	{ clear:both; }
+
+#news {
+	width: 500px;
+}
+
+/*Media Query
+@media screen and (max-device-width: 1020px) {
+	#topnav ul li {font-size: 20px;}
+	div button {font-size: 20px;}
+	li div div a {font-size: 20px;}
+} */
+
+
+
+
