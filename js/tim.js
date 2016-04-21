@@ -24,4 +24,12 @@ $(document).ready(function() {
 		$(this).css('background-color',	        'white');
 		$(this).css('border', 'none');
 	});
+	$('#backgroundVideo').click(function(){
+		$(this).fadeOut();
+		$('.videoPage').fadeIn()
+	});
+	$('#videoButton').click(function(){
+		$('#backgroundVideo').fadeIn();
+		$('.videoPage').fadeOut()
+	});
 });

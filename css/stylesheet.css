@@ -2,11 +2,11 @@
 
 /* Reset */
 
-html, body { 
-	margin: 0; 
-	padding: 0; 
-	border: 0; 
-	background: transparent; 
+html, body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	background: transparent;
 	font-size: 10px;
 }
 
@@ -21,7 +21,7 @@ div, span, article. aside, footer, header, hgroup, nav, section, h1, h2, h3, h4,
 img {
 	margin: 0;
 	padding: 0;
-	border: 0;	
+	border: 0;
 }
 
 table, th, tr, td, thead, tfoot, tbody {
@@ -29,22 +29,22 @@ table, th, tr, td, thead, tfoot, tbody {
 	padding: 0;
 	border: 0;
 	vertical-align: baseline;
-	background: transparent;	
+	background: transparent;
 }
 
 table {
 	border-collapse: collapse;
-	border-spacing: 0;	
+	border-spacing: 0;
 }
 
 input, select, textarea. form, fieldset {
 	margin: 0;
 	padding: 0;
-	border: 0;	
+	border: 0;
 }
 
 article, aside, dialog, figure, footer, header, hgroup, nav, section {
-	display: block;	
+	display: block;
 }
 
 h1, h2, h3, h4, h5, h6, p, li, blockquote, td, th, a, caption, em, strong, strike {
@@ -75,7 +75,7 @@ body {background-color: #001D51;}
 /* Headings */
 
 h1, h2, h3, h4, h5, h6 {
-	font-weight: bold;	
+	font-weight: bold;
 }
 
 h1 {font-size: 24px; padding-bottom: 15px; border-bottom: 1px #ccc solid; margin-bottom: 15px; color: #000FB8;}
@@ -92,19 +92,19 @@ h1 img, h2 img, h3 img, h4 img, h5 img, h6 img {margin: 0; }
 /* Text Elements */
 
 p {
-	color: #000; 	
+	color: #000;
 	font-size: 12px;
 	line-height: 150%;
 	margin: 15px 0;
 }
 
 p .left {
-	margin: 1.5em 1.5em 1.5em 0; 
+	margin: 1.5em 1.5em 1.5em 0;
 	padding: 0;
 }
 
 p .right {
-	margin: 1.5em 0 1.5em 1.5em; 
+	margin: 1.5em 0 1.5em 1.5em;
 	padding: 0;
 }
 
@@ -234,9 +234,9 @@ del {background: #FFCECE; color: #f00;}
 #calendar {
 	frameborder: 0;
 	scrolling: no;
-	
+
 }
-	
+
 
 
 
@@ -311,6 +311,31 @@ del {background: #FFCECE; color: #f00;}
 	color: #00f;
 }
 
+video#backgroundVideo {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(images/IMAG0061.jpg) no-repeat;
+    background-size: cover;
+}
+
+#videoButton {
+	font-size: 16px;
+}
+
+#videoExit {
+	font-size: 20px;
+}
+
 
 
 /* Navigation Extra */
@@ -323,27 +348,27 @@ form ol { list-style-type:none; }
 
 form 	{ text-align:left; margin:20px;	}
 
-label 	{ 
+label 	{
 		float: left; width: 150px; margin-top:5px;
 		text-align:right; display:block; background:none; font-weight:bold;
 		}
-	
+
 submit	{ background:none; 	}
 
-input 	{ 
+input 	{
 		width: 280px; margin:0 0 16px 10px;
-		border:1px #bbb solid; padding:5px; background:none; 
+		border:1px #bbb solid; padding:5px; background:none;
 		}
-		
+
 input:focus, textarea:focus	{ background-color:#68D1FD; }
 
 textarea {
 		width: 280px; height: 150px; margin:0 0 16px 10px;
-		border:1px #bbb solid; padding:5px; background:none; 
+		border:1px #bbb solid; padding:5px; background:none;
 		}
 
 select { margin-bottom:20px;	}
-	
+
 .month { margin-left:155px;	}
 
 .submit {
@@ -366,7 +391,3 @@ br		{ clear: left; 	}
 	div button {font-size: 20px;}
 	li div div a {font-size: 20px;}
 } */
-
-
-
-
