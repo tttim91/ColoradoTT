@@ -24,12 +24,29 @@ $(document).ready(function() {
 		$(this).css('background-color',	        'white');
 		$(this).css('border', 'none');
 	});
-	$('#backgroundVideo').click(function(){
+	$('#backgroundVideo').dblclick(function(){
 		$(this).fadeOut();
 		$('.videoPage').fadeIn()
+		$("#mute").fadeOut();
+		$("#videoExit").fadeOut();
+		$(this).prop('muted', true);
 	});
 	$('#videoButton').click(function(){
 		$('#backgroundVideo').fadeIn();
-		$('.videoPage').fadeOut()
+		$('.videoPage').fadeOut();
+		$('#videoExit').fadeIn();
+		$('#mute').fadeIn();
 	});
+	$("#backgroundVideo").click( function (){
+        if( $(this).prop('muted')==true )
+        {
+			$("#mute").fadeOut();
+            $(this).prop('muted', false);
+        }
+		else {
+			$("#mute").fadeIn();
+			$(this).prop('muted', true);
+		}
+    });
+
 });
