@@ -9,10 +9,4 @@ mail ($email, $subject, $message, "From:".$from);
 
 header('Location: ../ThankYou.html');
 
-
-
-
-
-
-
 ?>
