@@ -240,7 +240,7 @@ del {background: #FFCECE; color: #f00;}
 
 
 
-/* Containers */
+/* Containers/Content/Main Styles*/
 
 #outer {
 	width: 960px;
@@ -281,7 +281,11 @@ del {background: #FFCECE; color: #f00;}
 
 #map {width: 300px; height: 300px;}
 
-#rightside {width: 200px; float: right;}
+#rightside {width: 200px;
+	float: right;
+	border: 1px solid black;
+	padding: 10px;
+}
 
 #footer {clear: both; margin: 20px 0; border-top: 1px #8C8C8C solid; padding-bottom: 20px;}
 .footertext {font-size: 100%; font-style: normal; color: #000000; text-align: center;}
@@ -301,7 +305,7 @@ del {background: #FFCECE; color: #f00;}
 
 
 
-/* Layout Extra */
+/* Layout Extra (GIFs and Videos)*/
 
 #gif {
 	display: none;
@@ -334,6 +338,33 @@ video#backgroundVideo {
 
 #videoExit {
 	font-size: 20px;
+}
+
+#partners {
+	font-size: 20px;
+	float: right;
+	margin-top: 50px;
+	margin-right: 20px;
+	color: blue;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+#usattLogo {
+	float: right;
+	margin-top: 20px;
+	margin-right: 15px;
+}
+
+#ittfLogo {
+	float: right;
+	margin-top: 20px;
+	margin-right: 10px;
+}
+
+#ittvLogo {
+	float: right;
+	margin-right: 10px;
 }
 
 

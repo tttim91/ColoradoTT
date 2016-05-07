@@ -49,4 +49,31 @@ $(document).ready(function() {
 		}
     });
 
+	$('#pictureChange1').on("mouseover", function() {
+		var src = "images/tabletennis1.jpg";
+		var src2 = "images/tabletennis.jpg";
+		$(this).attr("src", src);
+		$("#pictureChange2").attr("src", src2);
+
+	});
+	$('#pictureChange1').on("mouseout", function() {
+		var src = "images/tabletennis.jpg";
+		var src2 = "images/tabletennis1.jpg";
+		$(this).attr("src", src);
+		$("#pictureChange2").attr("src", src2);
+	});
+
+	$('#pictureChange2').on("mouseover", function() {
+		var src = "images/tabletennis1.jpg";
+		var src2 = "images/tabletennis.jpg";
+		$(this).attr("src", src2);
+		$("#pictureChange1").attr("src", src);
+
+	});
+	$('#pictureChange2').on("mouseout", function() {
+		var src = "images/tabletennis.jpg";
+		var src2 = "images/tabletennis1.jpg";
+		$(this).attr("src", src2);
+		$("#pictureChange1").attr("src", src);
+	});
 });
