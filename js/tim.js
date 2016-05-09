@@ -24,21 +24,10 @@ $(document).ready(function() {
 		$(this).css('background-color',	        'white');
 		$(this).css('border', 'none');
 	});
-	$('#backgroundVideo').dblclick(function(){
-		$(this).fadeOut();
-		$('.videoPage').fadeIn()
-		$("#mute").fadeOut();
-		$("#videoExit").fadeOut();
-		$(this).prop('muted', true);
-	});
-	$('#videoButton').click(function(){
-		$('#backgroundVideo').fadeIn();
-		$('.videoPage').fadeOut();
-		$('#videoExit').fadeIn();
-		$('#mute').fadeIn();
-	});
-	$("#backgroundVideo").click( function (){
-        if( $(this).prop('muted')==true )
+
+	$('#backgroundVideo').on('click', function() {
+
+		if( $(this).prop('muted')==true )
         {
 			$("#mute").fadeOut();
             $(this).prop('muted', false);
@@ -47,7 +36,18 @@ $(document).ready(function() {
 			$("#mute").fadeIn();
 			$(this).prop('muted', true);
 		}
-    });
+	});
+
+	$('#videoButton').click(function(){
+		if($(this).next().is(':visible')) {
+			$(this).text('Watch Intro Video');
+		}
+		else {
+			$(this).text('Click to close video');
+		}
+		$('#backgroundVideo').toggle();
+		$('#backgroundVideo').prop('muted', true);
+	});
 
 	$('#pictureChange1').on("mouseover", function() {
 		var src = "images/tabletennis1.jpg";
